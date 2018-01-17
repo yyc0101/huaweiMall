@@ -1,0 +1,22 @@
+{
+  "name": "huanwei",
+  "version": "1.0.0",
+  "description": "这是我的项目名称",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyc0101/huaweiMall.git"
+  },
+  "author": "yuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yyc0101/huaweiMall/issues"
+  },
+  "homepage": "https://github.com/yyc0101/huaweiMall#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
