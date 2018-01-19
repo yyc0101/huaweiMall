@@ -119,6 +119,22 @@ function  goImg(transOrd) {
     $("#lunbo li").eq(ord).css({"backgroundColor":"white"}).siblings().css({"backgroundColor":""});
 }
 
+//轮播图详情
+function detiallun(){
+    var ua = navigator.userAgent.toLowerCase();
+    var isIE6 = ua.indexOf("msie 6") > -1;
+
+// remove css image flicker
+if(isIE6){
+    try{
+        document.execCommand("BackgroundImageCache", false, true);
+    }catch(e){}
+}
+//png24
+if (!!window.DD_belatedPNG) {
+    DD_belatedPNG.fix('img,.header .mid .btn_group ul li.login a,.header .mid .searchbox .btn_input,.recommend .recommend_con #item .btn_buy,.routes .routes_left #goodslist .league ul li .teletext .tip');
+};
+}
 
 
 
@@ -135,4 +151,6 @@ $(function(){
     initEvent();
     //3、自动播放
     autoPlay();
+    //轮播图详情
+    detiallun();
 })
