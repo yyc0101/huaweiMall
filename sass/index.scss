@@ -321,6 +321,7 @@ $baseSize:16px;
         position:relative;
         width:240px;
         height:448px;
+        overflow: hidden;
         //第一个li
         li{
             width:240px;
@@ -329,9 +330,16 @@ $baseSize:16px;
                 position: relative;
                 width:240px;
                 height:75px;
+                &:hover{
+                    background:#3d3d3d;
+                    a{
+                        color:#fff;
+                    }
+                }
                 a{
                     font-size:14px;
                     color:#999;
+                   
                 }
                 span:last-child{
                     margin-left:10px;
