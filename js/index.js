@@ -49,6 +49,7 @@ function more(){
 
 //轮播图
 var arr=["bo1.jpg","bo2.jpg.jpg","bo3.jpg.jpg","bo4.jpg.jpg","bo5.jpg.jpg","bo6.jpg.jpg","bo7.jpg.jpg"];
+var arr1=["z1.jpg","z2.jpg.jpg","z3.jpg.jpg","z4.jpg.jpg","z5.jpg.jpg","z6.jpg.jpg","z7.jpg.jpg"];
 var ord = 0;//代表当前图片的序号，从0开始。
 var myTimer = null;
 
@@ -80,6 +81,8 @@ function autoPlay() {
         ord++;
         if(ord>arr.length-1){
             ord=0;
+        }else if(ord>arr1.length-1){
+            ord=0;
         }
         //二、改变外观
         let $img = $("#lunbo img");
@@ -107,6 +110,8 @@ function  goImg(transOrd) {
     ord=transOrd;
     if(ord>arr.length-1){
         ord=0;
+    }else if(ord>arr1.length-1){
+        ord=0;
     }
     //二、改变外观
     let $img = $("#lunbo img");
@@ -119,26 +124,12 @@ function  goImg(transOrd) {
     $("#lunbo li").eq(ord).css({"backgroundColor":"white"}).siblings().css({"backgroundColor":""});
 }
 
-//轮播图详情
-function detiallun(){
-    var ua = navigator.userAgent.toLowerCase();
-    var isIE6 = ua.indexOf("msie 6") > -1;
 
-// remove css image flicker
-if(isIE6){
-    try{
-        document.execCommand("BackgroundImageCache", false, true);
-    }catch(e){}
+// 精品推荐
+
+function recommend(){
+	
 }
-//png24
-if (!!window.DD_belatedPNG) {
-    DD_belatedPNG.fix('img,.header .mid .btn_group ul li.login a,.header .mid .searchbox .btn_input,.recommend .recommend_con #item .btn_buy,.routes .routes_left #goodslist .league ul li .teletext .tip');
-};
-}
-
-
-
-
 
 
 $(function(){
@@ -151,6 +142,6 @@ $(function(){
     initEvent();
     //3、自动播放
     autoPlay();
-    //轮播图详情
-    detiallun();
+    //精品推荐
+    recommend();
 })
