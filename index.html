@@ -52,7 +52,7 @@
                 <li><a href="javascript: ;">请登录</a></li>
                 <li><a href="javascript: ;">注册</a></li>
                 <li><a href="javascript: ;">我的订单</a></li>
-                <li><p></p><a href="javascript: ;">购物车(0)</a></li>
+                <li><p></p><a id="shops" href="javascript: ;">购物车(0)</a></li>
             </div>
             <div id="shoppCart">
                 <div>
@@ -81,14 +81,15 @@
     </div>
     <div class="logoright">
         <div class="right">
-            <li><a href="javascript: ;">HUAWEI Mate 10</a></li>
-            <li><a href="javascript: ;">荣耀V10</a></li>
-            <li><a href="javascript: ;"></a></li>
-        </div>
-        <div class="onsbm">
-            <form>
-                <input type="text" id="firstInput" autocomplete="off">
-            </form>
+            <div class="onsbm">
+                <form>
+                    <input type="text" id="firstInput" autocomplete="off">
+                </form>
+            </div>
+            <div id="liss">
+                <li><a href="javascript: ;">HUAWEI Mate 10</a></li>
+                <li><a href="javascript: ;">荣耀V10</a></li>
+            </div>
         </div>
     </div>
 
@@ -645,9 +646,9 @@
     </div>
 </div>
 <!-- 精品推荐 -->
+<div id="bout-title">精品推荐</div>
 <div id="bout">  
     <div id="recommend">
-        <div id="bout-title">精品推荐</div>
         <div id="bout-bottom">
             <ul id="uuls">
                 <!-- 第一个图 -->
@@ -820,12 +821,13 @@
     </div>
 </div>
 
+<!-- 八个图的详情 -->
 <div id="gg-detial"> 
         <ul id="ulss">
             <!-- 第一个图 -->
             <a href="javascript: ;">
                 <li id="lis">
-                    <img src="../imgs/g1.jpg">
+                    <div id="firstImg"><img src="../imgs/g1.jpg"></div>
                 </li>
             </a>
             <!-- 第一个图 -->
@@ -894,7 +896,1059 @@
         </ul>   
 </div>
 
+<!-- 笔记本电脑 -->
+<!-- 更多 -->
+<div class="Page">
+    <div class="lo">
+        <a href="javascript: ;"><p>笔记本电脑</p></a>
+        <ul>
+            <li><a href="javascript: ;">笔记本电脑</a></li>
+            <li><a href="javascript: ;">平板电脑</a></li>
+            <li><a href="javascript: ;">笔记本配件</a></li>
+        </ul>
+        <div class="right">
+            <li><a href="javascript: ;">更多></a></li>
+        </div>
+    </div>
+</div>
 
+<!-- 四个图的详情 -->
+<div id="bb-detial"> 
+    <ul id="ulss">
+        <!-- 第一个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <div id="firstImg"><img src="../imgs/b.jpg"></div>
+            </li>
+        </a>
+        <!-- 第一个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/b1.jpg">
+                <span>荣耀畅玩7X</span>
+                <i>千元全面屏购机赢好礼</i>
+                <p>￥2999</p>
+            </li>
+            <p id="ps"><img src="../imgs/w2.png"></p>
+        </a>
+        <!-- 第三个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/b2.jpg">
+                <span>荣耀畅玩7X</span>
+                <i>千元全面屏购机赢好礼</i>
+                <p>￥3999</p>
+            </li>
+            <p id="ps"><img src="../imgs/w4.png"></p>
+        </a>
+         <!-- 第四个图 -->
+         <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/b3.jpg">
+                <span>荣耀畅玩7X</span>
+                <i>千元全面屏购机赢好礼</i>
+                <p>￥1900</p>
+            </li>
+        </a>
+    </ul>   
+</div>
+
+<!-- 精品平板 -->
+<div class="Page">
+    <div class="lo">
+        <a href="javascript: ;"><p>笔记本电脑</p></a>
+        <ul>
+            <li><a href="javascript: ;">笔记本电脑</a></li>
+            <li><a href="javascript: ;">平板电脑</a></li>
+            <li><a href="javascript: ;">笔记本配件</a></li>
+        </ul>
+        <div class="right">
+            <li><a href="javascript: ;">更多></a></li>
+        </div>
+    </div>
+</div>
+
+<div id="gg-detial"> 
+    <ul id="ulss">
+        <!-- 第一个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <div id="firstImg"><img src="../imgs/p.jpg"></div>
+            </li>
+        </a>
+        <!-- 第一个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/p1.jpg">
+                <span>华为荣耀平板</span>
+                <i>最高直降30</i>
+                <p>￥2349</p>
+            </li>
+        </a>
+        <!-- 第一个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/p2.jpg">
+                <span>华为荣耀畅玩平板</span>
+                <i>护眼蓝光高高清屏</i>
+                <p>￥5999</p>
+            </li>
+            
+        </a>
+         <!-- 第四个图 -->
+         <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/p3.jpg">
+                <span>华为平板2</span>
+                <i>千元全面屏购机赢好礼</i>
+                <p>￥1400</p>
+            </li>
+        </a>
+         <!-- 第一个图 -->
+         <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/p4.jpg">
+                <span>换位平板3s</span>
+                <i>掌上炫彩世界</i>
+                <p>￥3989</p>
+            </li>
+            <p id="ps"><img src="../imgs/pp1.png"></p>
+        </a>
+         <!-- 第六个图 -->
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/p5.jpg">
+                <span>荣耀畅玩s3</span>
+                <i>千元全面屏购机赢好礼</i>
+                <p>￥2999</p>
+            </li>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/p6.jpg">
+                <span>荣耀畅玩27英寸</span>
+                <i>护眼蓝光高高清屏</i>
+                <p>￥3969</p>
+            </li>
+            <p id="ps"><img src="../imgs/pp2.png"></p>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/p7.jpg">
+                <span>荣耀畅玩X</span>
+                <i>千元全面屏购机赢好礼</i>
+                <p>￥6499</p>
+            </li>
+        </a>
+    </ul>   
+</div>
+
+
+<!-- 智能穿戴 -->
+<div class="Page">
+    <div class="lo">
+        <a href="javascript: ;"><p>智能穿戴</p></a>
+        <ul>
+            <li><a href="javascript: ;">手机</a></li>
+            <li><a href="javascript: ;">手表</a></li>
+        </ul>
+        <div class="right">
+            <li><a href="javascript: ;">更多></a></li>
+        </div>
+    </div>
+</div>
+
+<div id="gg-detial"> 
+    <ul id="ulss">
+        <!-- 第一个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <div id="firstImg"><img src="../imgs/zn.jpg"></div>
+            </li>
+        </a>
+        <!-- 第一个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/zn1.jpg">
+                <span>荣耀手环A2</span>
+                <i>最高直降30</i>
+                <p>￥2349</p>
+            </li>
+            <p id="ps"><img src="../imgs/pp2.png"></p>
+        </a>
+        <!-- 第一个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/zn2.jpg">
+                <span>荣耀手环3</span>
+                <i>直降50</i>
+                <p>￥599</p>
+            </li>
+            
+        </a>
+         <!-- 第四个图 -->
+         <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/zn3.jpg">
+                <span>华为手环B3</span>
+                <i>限时优惠20元</i>
+                <p>￥400</p>
+            </li>
+            <p id="ps"><img src="../imgs/pp2.png"></p>
+        </a>
+         <!-- 第一个图 -->
+         <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/zn4.jpg">
+                <span>荣耀手环s2</span>
+                <i>直降20</i>
+                <p>￥389</p>
+            </li>
+        </a>
+         <!-- 第六个图 -->
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/zn5.png">
+                <span>华为运动手环</span>
+                <i>直降20</i>
+                <p>￥299</p>
+            </li>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/zn6.jpg">
+                <span>荣耀畅玩手环A1</span>
+                <i>直降20</i>
+                <p>￥369</p>
+            </li>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/zn7.jpg">
+                <span>荣耀运动手环</span>
+                <i>购环赢好礼</i>
+                <p>￥999</p>
+            </li>
+        </a>
+    </ul>   
+</div>
+
+<!-- 智能家居 -->
+<!-- 八个图效果（第一个图占两位） -->
+<div class="Page">
+    <div class="lo">
+        <a href="javascript: ;"><p>智能家居</p></a>
+        <ul>
+            <li><a href="javascript: ;">路由器</a></li>
+            <li><a href="javascript: ;">子母/分布式路由</a></li>
+            <li><a href="javascript: ;">电力猫/wifi放大器</a></li>
+            <li><a href="javascript: ;">随性wifi</a></li>
+            <li><a href="javascript: ;">电视盒子</a></li>
+            <li><a href="javascript: ;">生态产品</a></li>
+        </ul>
+        <div class="right">
+            <li><a href="javascript: ;">更多></a></li>
+        </div>
+    </div>
+</div>
+<!-- 智能家居详情 -->
+<div id="ju-detial"> 
+    <ul id="ulss">
+        <!-- 第一个图 -->
+        <a id="firstA" href="javascript: ;">
+            <li id="lis">
+                <div id="firstImg"><img src="../imgs/ju.jpg"></div>
+            </li>
+        </a>
+        <!-- 第三个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/ju1.jpg">
+                <span>荣耀路由</span>
+                <i>直降50</i>
+                <p>￥2599</p>
+            </li>
+            
+        </a>
+            <!-- 第四个图 -->
+            <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/ju2.jpg">
+                <span>华为路由B3</span>
+                <i>限时优惠20元</i>
+                <p>￥400</p>
+            </li>
+            <p id="ps"><img src="../imgs/pp2.png"></p>
+        </a>
+            <!-- 第一个图 -->
+            <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/ju3.jpg">
+                <span>荣耀随性wifi2</span>
+                <i>直降20</i>
+                <p>￥389</p>
+            </li>
+        </a>
+            <!-- 第六个图 -->
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/ju5.jpg">
+                <span>荣耀路由增强版</span>
+                <i>不见天线稳不掉线</i>
+                <p>￥299</p>
+            </li>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/ju6.jpg">
+                <span>荣耀路由ws5</span>
+                <i>直降20</i>
+                <p>￥369</p>
+            </li>
+            <p id="ps"><img src="../imgs/pp1.png"></p>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/ju7.png">
+                <span>荣耀子母路由器</span>
+                <i>购环赢好礼</i>
+                <p>￥999</p>
+            </li>
+        </a>
+    </ul>   
+</div>
+<!-- 智能家居下方轮播图 -->
+<div id="bout">  
+    <div id="recommend">
+        <div id="bout-bottom">
+            <ul id="uuls">
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/ry.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥3999</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/ry1.jpg"></p>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/ry3.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/s2.png"></p>
+                </a>
+                <!-- 第三个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/ry4.png">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/w2.png"></p>
+                </a>
+                <!-- 第四个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/ry5.png">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/s2.png"></p>
+                </a>
+                
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/ry6.png">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/c6.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/c7.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/c8.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/c9.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/c10.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/c11.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/c12.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/c13.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+            </ul>
+            <div id="btn">
+                <a href="javascript: ;" id="btn-left"><</a>
+                <a href="javascript: ;" id="btn-right">></a>
+            </div>
+        </div>
+    </div>
+     
+</div>
+
+<!-- 热销配件 -->
+<div class="Page">
+    <div class="lo">
+        <a href="javascript: ;"><p>热销配件</p></a>
+        <ul>
+            <li><a href="javascript: ;">移动电源</a></li>
+            <li><a href="javascript: ;">耳机</a></li>
+            <li><a href="javascript: ;">充电器/线材</a></li>
+            <li><a href="javascript: ;">自拍杆/支架</a></li>
+            <li><a href="javascript: ;">音箱</a></li>
+            <li><a href="javascript: ;">U盘/存蓄卡</a></li>
+            <li><a href="javascript: ;">排插</a></li>
+            <li><a href="javascript: ;">摄像头/镜头</a></li>
+            <li><a href="javascript: ;">智能硬件</a></li>
+            <li><a href="javascript: ;">生活周边</a></li>
+        </ul>
+        <div class="right">
+            <li><a href="javascript: ;">更多></a></li>
+        </div>
+    </div>
+</div>
+<!-- 热销配件详情 -->
+<div id="ju-detial"> 
+    <ul id="ulss">
+        <!-- 第一个图 -->
+        <a id="firstA" href="javascript: ;">
+            <li id="lis">
+                <div id="firstImg"><img src="../imgs/pj.jpg"></div>
+            </li>
+        </a>
+        <!-- 第三个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/pj1.jpg">
+                <span>荣耀路由</span>
+                <i>直降50</i>
+                <p>￥2599</p>
+            </li>
+            <p id="ps"><img src="../imgs/pp2.png"></p>
+        </a>
+            <!-- 第四个图 -->
+            <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/pj2.jpg">
+                <span>华为路由B3</span>
+                <i>限时优惠20元</i>
+                <p>￥400</p>
+            </li>
+        </a>
+            <!-- 第一个图 -->
+            <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/pj3.jpg">
+                <span>荣耀随性wifi2</span>
+                <i>直降20</i>
+                <p>￥389</p>
+            </li>
+        </a>
+            <!-- 第六个图 -->
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/pj4.jpg">
+                <span>荣耀路由增强版</span>
+                <i>不见天线稳不掉线</i>
+                <p>￥299</p>
+            </li>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/pj5.jpg">
+                <span>荣耀路由ws5</span>
+                <i>直降20</i>
+                <p>￥369</p>
+            </li>
+            <p id="ps"><img src="../imgs/pp1.png"></p>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/pj6.jpg">
+                <span>荣耀子母路由器</span>
+                <i>购环赢好礼</i>
+                <p>￥999</p>
+            </li>
+        </a>
+    </ul>   
+</div>
+<!-- 热销配件下方轮播图 -->
+<div id="bout">  
+    <div id="recommend">
+        <div id="bout-bottom">
+            <ul id="uuls">
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp1.jpg">
+                        <span>荣耀音乐小巨蛋</span>
+                        <i>限时优惠30元</i>
+                        <p>￥399</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/xp.png"></p>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp2.jpg">
+                        <span>华为运动蓝牙耳机</span>
+                        <i>限时优惠30元</i>
+                        <p>￥499</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/s1.png"></p>
+                </a>
+                <!-- 第三个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp3.jpg">
+                        <span>荣耀车载充电器</span>
+                        <i>限时优惠30元</i>
+                        <p>￥439</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/xp.png"></p>
+                </a>
+                <!-- 第四个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp4.jpg">
+                        <span>华为全景相机</span>
+                        <i>限时优惠30元</i>
+                        <p>￥299</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/s2.png"></p>
+                </a>
+                
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp5.jpg">
+                        <span>荣耀电源</span>
+                        <i>限时优惠30元</i>
+                        <p>￥429</p>
+                    </li>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp6.jpg">
+                        <span>华为运动耳机</span>
+                        <i>限时优惠30元</i>
+                        <p>￥439</p>
+                    </li>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp7.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥199</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/xp.png"></p>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp8.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥299</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp9.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥399</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp10.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥499</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp11.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp12.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp13.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp14.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp15.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xp16.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>千元全面屏购机赢好礼</i>
+                        <p>￥4999</p>
+                    </li>
+                </a>
+            </ul>
+            <div id="btn">
+                <a href="javascript: ;" id="btn-left"><</a>
+                <a href="javascript: ;" id="btn-right">></a>
+            </div>
+        </div>
+    </div>
+         
+</div>
+<!-- 品牌配件 -->
+<div class="Page">
+    <div class="lo">
+        <a href="javascript: ;"><p>品牌配件</p></a>
+        <ul>
+            <li><a href="javascript: ;">移动电源</a></li>
+            <li><a href="javascript: ;">耳机</a></li>
+            <li><a href="javascript: ;">充电器/线材</a></li>
+            <li><a href="javascript: ;">自拍杆/支架</a></li>
+            <li><a href="javascript: ;">音箱</a></li>
+            <li><a href="javascript: ;">U盘/存储卡</a></li>
+            <li><a href="javascript: ;">排插</a></li>
+            <li><a href="javascript: ;">摄像头/镜头</a></li>
+            <li><a href="javascript: ;">智能硬件</a></li>
+            <li><a href="javascript: ;">生活周边</a></li>
+        </ul>
+        <div class="right">
+            <li><a href="javascript: ;">更多></a></li>
+        </div>
+    </div>
+</div>
+<!-- 品牌配件详情 -->
+<div id="ju-detial"> 
+    <ul id="ulss">
+        <!-- 第一个图 -->
+        <a id="firstA" href="javascript: ;">
+            <li id="lis">
+                <div id="firstImg"><img src="../imgs/pa.jpg"></div>
+            </li>
+        </a>
+        <!-- 第三个图 -->
+        <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/pa1.jpg">
+                <span>荣耀路由</span>
+                <i>直降50</i>
+                <p>￥2599</p>
+            </li>
+            <p id="ps"><img src="../imgs/w4.png"></p>
+        </a>
+            <!-- 第四个图 -->
+            <a href="javascript: ;">
+            <li id="lis">
+                <img src="../imgs/pa2.jpg">
+                <span>华为路由B3</span>
+                <i>限时优惠20元</i>
+                <p>￥400</p>
+            </li>
+            <p id="ps"><img src="../imgs/w4.png"></p>
+        </a>
+            <!-- 第一个图 -->
+            <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/pa3.jpg">
+                <span>荣耀随性wifi2</span>
+                <i>直降20</i>
+                <p>￥389</p>
+            </li>
+        </a>
+            <!-- 第六个图 -->
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/pa4.jpg">
+                <span>荣耀路由增强版</span>
+                <i>不见天线稳不掉线</i>
+                <p>￥299</p>
+            </li>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/pa5.jpg">
+                <span>荣耀路由ws5</span>
+                <i>直降20</i>
+                <p>￥369</p>
+            </li>
+            <p id="ps"><img src="../imgs/w4.png"></p>
+        </a>
+        <a href="javascript: ;" style="margin-top:10px;">
+            <li id="lis">
+                <img src="../imgs/pa6.jpg">
+                <span>荣耀子母路由器</span>
+                <i>购环赢好礼</i>
+                <p>￥999</p>
+            </li>
+        </a>
+    </ul>   
+</div>
+<!-- 品牌配件下方轮播图 -->
+<div id="bout">  
+    <div id="recommend">
+        <div id="bout-bottom">
+            <ul id="uuls">
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl1.jpg">
+                        <span>荣耀音乐小巨蛋</span>
+                        <i>限时优惠30元</i>
+                        <p>￥399</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/xp.png"></p>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl2.jpg">
+                        <span>华为运动蓝牙耳机</span>
+                        <i>限时优惠30元</i>
+                        <p>￥499</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/s1.png"></p>
+                </a>
+                <!-- 第三个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl3.jpg">
+                        <span>荣耀车载充电器</span>
+                        <i>限时优惠30元</i>
+                        <p>￥439</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/xp.png"></p>
+                </a>
+                <!-- 第四个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl4.jpg">
+                        <span>华为全景相机</span>
+                        <i>限时优惠30元</i>
+                        <p>￥299</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/s2.png"></p>
+                </a>
+                
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl5.jpg">
+                        <span>荣耀电源</span>
+                        <i>限时优惠30元</i>
+                        <p>￥429</p>
+                    </li>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl6.jpg">
+                        <span>华为运动耳机</span>
+                        <i>限时优惠30元</i>
+                        <p>￥439</p>
+                    </li>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl7.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥199</p>
+                    </li>
+                    <p id="ps"><img src="../imgs/xp.png"></p>
+                </a>
+                <!-- 第一个图 -->
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl8.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥299</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl9.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥399</p>
+                    </li>
+                </a>
+                <a href="javascript: ;">
+                    <li id="lis">
+                        <img src="../imgs/xl10.jpg">
+                        <span>荣耀畅玩7X</span>
+                        <i>限时优惠30元</i>
+                        <p>￥499</p>
+                    </li>
+                </a>
+            </ul>
+            <div id="btn">
+                <a href="javascript: ;" id="btn-left"><</a>
+                <a href="javascript: ;" id="btn-right">></a>
+            </div>
+        </div>
+    </div>           
+</div>
+<!-- 实名认证 -->
+<div id="shiming">
+    <div id="shis">
+        <a href="javascript: ;">
+            <img src="../imgs/sm.jpg">
+        </a>
+    </div>
+</div>
+
+<!-- 首页底部 -->
+<div id="foot">
+    <div id="footer"> 
+        <!-- 第一部分 -->
+        <div id="footone">
+            <li>
+                <div id="sIMg1"><i></i></div>
+                <a href="javascript: ;">百强企业&nbsp;品牌包保证</a>
+            </li>
+            <li>
+                <div id="sIMg2"><i></i></div>
+                <a href="javascript: ;">7天退货&nbsp;15天换货</a>
+            </li>
+            <li>
+                <div id="sIMg3"><i ></i></div>
+                <a href="javascript: ;">48元起免邮</a>
+            </li>
+            <li>
+                <div id="sIMg4"><i></i></div>
+                <a href="javascript: ;">448家维修网点&nbsp;全国联保</a>
+            </li>
+        </div>
+        
+        <!-- 第二部分 -->
+        <div id="foottwo">
+            <div id="twoLeft">
+
+                <div id="Left">
+                    <div id="xian"></div>
+                    <div id="leftTitle">购物相关</div>
+                    <ul>
+                        <li><a href="javascript: ;">购物指南</a></li>
+                        <li><a href="javascript: ;">配送方式</a></li>
+                        <li><a href="javascript: ;">支付方式</a></li>
+                        <li><a href="javascript: ;">常见问题</a></li>
+                    </ul>
+                </div>
+                <div id="Left">
+                    <div id="xian"></div>
+                    <div id="leftTitle">保修与退货</div>
+                    <ul>
+                        <li><a href="javascript: ;">保修政策</a></li>
+                        <li><a href="javascript: ;">退换货政策</a></li>
+                        <li><a href="javascript: ;">退换货流程</a></li>
+                        <li><a href="javascript: ;">保修状态查询</a></li>
+                    </ul>
+                </div>
+                <div id="Left">
+                    <div id="xian"></div>
+                    <div id="leftTitle">维修与技术支持</div>
+                    <ul>
+                        <li><a href="javascript: ;">售后网点</a></li>
+                        <li><a href="javascript: ;">预约维修</a></li>
+                        <li><a href="javascript: ;">手机寄修</a></li>
+                        <li><a href="javascript: ;">上门服务</a></li>
+                    </ul>
+                </div>
+                <div id="Left">
+                    <div id="xian"></div>
+                    <div id="leftTitle">关于我们</div>
+                    <ul>
+                        <li><a href="javascript: ;">华为商城简介</a></li>
+                        <li><a href="javascript: ;">华为下线门店</a></li>
+                        <li><a href="javascript: ;">荣耀下线门店</a></li>
+                    </ul>
+                </div>
+                <div id="Left">
+                    <div id="xian"></div>
+                    <div id="leftTitle">关注我们</div>
+                    <ul>
+                        <li><a href="javascript: ;">新浪微博 </a></li>
+                        <li><a href="javascript: ;">腾讯微博 </a></li>
+                        <li><a href="javascript: ;">花粉俱乐部</a></li>
+                    </ul>
+                </div>
+                <div id="Left">
+                    <div id="xian"></div>
+                    <div id="leftTitle">友情链接</div>
+                    <ul>
+                        <li><a href="javascript: ;">华为官网</a></li>
+                        <li><a href="javascript: ;">华为商城手机版</a></li>
+                        <li><a href="javascript: ;">荣耀官网</a></li>
+                        <li><a href="javascript: ;">花粉俱乐部</a></li>
+                        <li><a href="javascript: ;">莫塞尔商城</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="twoRight"> 
+                <div id="Left">
+                    <div id="xian"></div>
+                    <div id="leftTitle">400-088-6888</div>
+                    <ul>
+                        <li><a href="javascript: ;">华为官网</a></li>
+                        <li><a id="a1" href="javascript: ;">
+                            <img src="../imgs/zx1.jpg"/>
+                        </a></li>
+                        <li><a id="a2" href="javascript: ;">
+                            <img src="../imgs/zx2.jpg"/>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 第三部分 -->
+<div id="footThree">
+    <div id="three"> 
+        <div id="footLogo"><img src="../imgs/logos.jpg"></div>
+        <div id="footContent">
+            <div>
+                <a href="javascript: ;">隐私政策</a>&nbsp;<a href="javascript: ;">服务协议</a>
+                <span>Copyright © 2012-2017 华为软件技术有限公司 版权所有 保留一切权利</span>
+            </div>
+            <div>
+                <span>公安备案</span>
+                <a href="javascript: ;">苏公网安备32011402010009号</a>&nbsp;|&nbsp;<a href="javascript: ;">苏ICP备17040376号-6</a>
+                <span>增值电信业务经营许可证：</span><a href="javascript: ;">苏B2-20130048号</a>
+            </div>
+            <div>
+                <span>网络文化经营许可证：</span>
+                <a href="javascript: ;">苏网文[2015] 1599-026号</a>
+            </div>
+        </div>
+        <div id="threeRight">
+            <a href="javascript: ;"><img src="../imgs/foot1.png"></a>
+           <a href="javascript: ;"><img src="../imgs/foot2.png"></a>
+            <a href="javascript: ;"><img src="../imgs/foot3.png"></a>
+            <a href="javascript: ;"><img src="../imgs/foot4.jpg"></a>
+        </div>
+    </div>
+</div>
+
+<div id="lastFix">
+    <div id="fix">↑</div>   
+    <div id="fixes"><p></p></div>
+    <div id="fixLoca">
+        <div id="fix1">
+            <li><a href="#"></a></li>
+        </div>
+        <div id="fix2">
+            <li><a href="#"></a></li>
+        </div>
+        <div id="fix3">
+            <li><a href="#"></a></li>
+        </div>
+        <div id="fix4">
+            <li><a href="#"></a></li>
+        </div>
+        <div id="fix5">
+            <li><a href="#"></a></li>
+        </div>
+    </div>
+</div>
 </body>
 <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../js/bufferMove.js"></script>

@@ -7,32 +7,83 @@ function ad(){
         $('#bgimgs').css({'display':'none'})
     });
 }
+ad();
+// logo页显示
+$(document).ready(function(){
+    //更多精彩	
+    $("#show").bind("mouseenter",function () {
+        $(this).css({
+            "color":"#ca151d",
+        })
+        $('#down-more').show();
+        $('#down-more').css({
+            "color":"#ca151d",
+        });
+    });
+
+    $("#show").bind("mouseleave",function () {
+        iTimer = setTimeout(function(){
+            $('#down-more').hide();
+            $('#show').css({
+                "color":"#3a3a3a",
+            });
+        },2);
+    });
+
+    $("#down-more").bind("mouseenter",function () {
+        clearTimeout(iTimer);
+    });	
+
+    $("#shops").mouseleave(function(){
+        $('#down-more').hide();
+        $('#show').css("color","#3a3a3a");
+    })
+
+    //跟多精彩
+    $("#shops").bind("mouseenter",function () {
+        $(this).css({
+            "color":"#ca151d",
+        })
+        $('#shoppCart').show();
+    });
+
+    $("#shops").bind("mouseleave",function () {
+        iTimer = setTimeout(function(){
+            $('#shoppCart').hide();
+            $('#shops').css({
+                "color":"#3a3a3a",
+            });
+        },2);
+    });
+
+    $("#shoppCart").bind("mouseenter",function () {
+        clearTimeout(iTimer);
+    });	
+
+    $("#shoppCart").mouseleave(function(){
+        $('#shoppCart').hide();
+        $('#shops').css("color","#3a3a3a");
+    })
+
+
+
+//固定定位
+$(window).scroll(function(){
+    if($(window).scrollTop()>$(document).offset()){
+        $('#fix').css({
+            display:'block'
+        })
+    }
+})
+
+
+});
+// 底部
+
+
+
 //更多
 function more(){
-    $('#show').mouseenter(function(){
-        $('#down-more').css({
-            display:'block',
-        });
-    });
-    //更多
-    $('#show').mouseleave(function(){
-        $('#down-more').css({
-            display:'none',
-           background:'#fff',
-        });
-    });
-    //购物车
-    $('#regist  li:last-child').mouseenter(function(){
-        $('#shoppCart').css({
-            background:'#fff',
-            display:'block',
-        });
-    });
-    $('#regist  li:last-child').mouseleave(function(){
-        $('#shoppCart').css({
-            display:'none',
-        });
-    });
     //logoye搜索框
     $('.onsbm form input').focus(function(){
         $('.right li:nth-child(1)').css({
@@ -47,9 +98,9 @@ function more(){
     })
 }
 
+more();
 //轮播图
 var arr=["bo1.jpg","bo2.jpg.jpg","bo3.jpg.jpg","bo4.jpg.jpg","bo5.jpg.jpg","bo6.jpg.jpg","bo7.jpg.jpg"];
-var arr1=["z1.jpg","z2.jpg.jpg","z3.jpg.jpg","z4.jpg.jpg","z5.jpg.jpg","z6.jpg.jpg","z7.jpg.jpg"];
 var ord = 0;//代表当前图片的序号，从0开始。
 var myTimer = null;
 
@@ -81,8 +132,6 @@ function autoPlay() {
         ord++;
         if(ord>arr.length-1){
             ord=0;
-        }else if(ord>arr1.length-1){
-            ord=0;
         }
         //二、改变外观
         let $img = $("#lunbo img");
@@ -110,8 +159,6 @@ function  goImg(transOrd) {
     ord=transOrd;
     if(ord>arr.length-1){
         ord=0;
-    }else if(ord>arr1.length-1){
-        ord=0;
     }
     //二、改变外观
     let $img = $("#lunbo img");
@@ -124,24 +171,12 @@ function  goImg(transOrd) {
     $("#lunbo li").eq(ord).css({"backgroundColor":"white"}).siblings().css({"backgroundColor":""});
 }
 
+//轮播图
+//1、初始化界面
+initUI();
+//2、绑定事件
+initEvent();
+//3、自动播放
+autoPlay();
 
-// 精品推荐
 
-function recommend(){
-	
-}
-
-
-$(function(){
-    ad();
-    more();
-    //轮播图
-    //1、初始化界面
-    initUI();
-    //2、绑定事件
-    initEvent();
-    //3、自动播放
-    autoPlay();
-    //精品推荐
-    recommend();
-})
