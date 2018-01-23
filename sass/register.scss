@@ -63,16 +63,19 @@ a{
             height:530px;
             background:#fff;
             margin-top:20px;
-
+            #spanS{
+                display: block;
+                width:200px;
+                height:30px;
+                line-height: 30px;
+                margin-left:30px;
+                margin-top:10px;
+            }
             form{
-            
-                input:first-child{
-                    margin-top:30px;
-                }
                 input{
                     margin-left: 30px;
                     width:300px;
-                    padding-top:15px;
+                    padding-top:20px;
                     padding-bottom: 20px;
                     outline: none;
                     border: none;

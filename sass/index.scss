@@ -255,11 +255,11 @@ $baseSize:16px;
                 }
             }
         }
+}
 
-    }
 
 
-//轮播图
+    //轮播图
 #lundetial{
     position: relative;
     width:100%;
@@ -739,11 +739,12 @@ $baseSize:16px;
             height:300px;
             margin-top:10px;
             position: relative;
-                #uuls{
+                .uuls{
                     background:#f5f5f5;
                     width:3100px;
                     height:300px;
                     overflow: hidden;
+                    position: absolute;
                     a{
                         background:#fff;
                         float:left;
@@ -789,8 +790,7 @@ $baseSize:16px;
                         }
                     }
                 } 
-                #btn{
-                    position: relative;;
+                .btn{
                     a{
                         background:#eee;
                         bottom:100px;
@@ -802,10 +802,10 @@ $baseSize:16px;
                         color:#fff;
                         position: absolute;
                     }
-                    #btn-left{
+                    .btn-left{
                         left:0;
                     }
-                    #btn-right{
+                    .btn-right{
                         right:0;
                     }
                 }
@@ -854,7 +854,7 @@ $baseSize:16px;
             #imgI7{
                 opacity:0;
             }
-            #btns{
+            .btns{
                 position:absolute;
                 right:120px;
                 bottom:10px;
@@ -1355,48 +1355,52 @@ $baseSize:16px;
     }
 }
 
-//固定定位
-#fix{
-    display: none;
-    width:40px;
-    height:40px;
-    text-align: center;
-    color: #fff;
-    line-height:40px;
-    border-radius: 50%;
-    background:rgba(0, 0, 0, .5);
-    position: fixed;
-    bottom:100px;
-    right:20px;
-    &:hover{
-        cursor: pointer;
-    }
-}
-#fixes{
-    display: block;
-    width:40px;
-    height:40px;
-    color: #fff;
-    border-radius: 50%;
-    background-color:rgba(0, 0, 0, .5);
-    position: fixed;
-    bottom:50px;
-    right:20px;
-    &:hover{
-        cursor: pointer;
-    }
-    p{
-        height:20px;
-        width:20px;
-        position: absolute;
-        margin: 0 auto;
-        overflow: hidden;
-        left:10px;
-        top:10px;
-        background: url('../imgs/common.png') no-repeat -166px 0px;
-    }
-}
 #lastFix{
+    //固定定位
+    #fix{
+        display: none;
+        width:40px;
+        height:40px;
+        text-align: center;
+        color: #fff;
+        line-height:40px;
+        border-radius: 50%;
+        background:rgba(0, 0, 0, .5);
+        position: fixed;
+        bottom:100px;
+        right:20px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    #fixes{
+        width:40px;
+        height:40px;
+        color: #fff;
+        border-radius: 50%;
+        background-color:rgba(0, 0, 0, .5);
+        position: fixed;
+        bottom:50px;
+        right:20px;
+        &:hover #fixLoca{
+            display: block;
+        }
+        
+        p{
+            &:hover{
+                cursor: pointer;
+            }
+            height:20px;
+            width:20px;
+            position: absolute;
+            margin: 0 auto;
+            overflow: hidden;
+            left:10px;
+            top:10px;
+            background: url('../imgs/common.png') no-repeat -166px 0px;
+        }
+    }
+#fixLoca{
     display: none;
     #fix1{
         position: fixed;
@@ -1486,5 +1490,8 @@ $baseSize:16px;
             background: url('../imgs/common.png') no-repeat 0px -198px;
         }
     }
+
+
+}
     
 }

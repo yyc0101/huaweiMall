@@ -37,6 +37,9 @@ a{
     }
 
     #photo{
+        width:310px;
+        margin:25px auto;
+        margin-left:128px;
         span{
             width:150px;
             height:35px;
@@ -57,10 +60,117 @@ a{
         }
           
     }
+}
 
 
+// 中间内容
+.wp1 {
+    position: relative;
+    width: 100%;
+    height:600px;
+    background:#ebebeb;
+    .login {
+        margin-top: -25px;
+        font-size: 14px;
+        margin-left:990px;
+    
+    }
+    .reg-detail{
+        width:1000px;
+        height: 560px;
+        margin:0 auto;
+        font-size: 14px;
+        color: #333;
+        font-size: 14px;
+        background: #fff;
+        position: absolute;
+        left:0;
+        top:20px;
+        margin-left:127px;
+        text-align: center;
+        .input-container {
+            position: relative;
+            width:420px;
+            height: 42px;
+            background: #f7f7f7;
+            border: 1px solid #d9d9d9;
+            border-radius: 21px;
+            margin-top:30px;
+            margin-left:250px;
+            .input-left{
+                width: 90px;
+                height: 100%;
+                border-right: 1px solid #d9d9d9;
+                padding: 0 16px;
+                line-height: 42px;
+            }
+            .input-content{
+                position: relative;
+                #selectCountryImg{
+                    width:100%;
+                    height:44px;
+                    line-height: 44px;
+                    position: relative;
+                    display: inline-block;
+                    cursor: pointer;
+                    position: absolute;
+                    top:-43px;
+                    left:0;
+                }
+                
+                .opacity_Class{
+                    top:-40px;
+                    left:130px;
+                    display: block;
+                    position: absolute; 
+                    cursor: text; 
+                    float: left; 
+                    z-index: 2; 
+                    padding-top: 10px;
+                }
+                #username{
+                    position: absolute;
+                    top:-30px;
+                    left:130px;
+                    border: none;
+                    outline: none;
+                    background: #f7f7f7;
+                }
+                #randomCodeDiv{
+                    position: relative;
+                    .input-right{
+                        position: relative;
+                    }
+                }
+            }
+        }
+        
+        .reg-btn{
+            #btnSubmit{
+                background: #b40707;
+                color: #fff;
+                font-size: 12px;
+                font-weight: 600;
+                width: 230px;
+                height: 45px;
+                line-height: 45px;
+                margin-top: 35px;
+                border-radius: 50px;
+                margin-left:-70px;
+                outline: none;
+                border:none;
+                cursor: pointer;
+            }
+        }
+    }
+}
 
-
+#xs{
+    border-bottom: 1px solid #d7d7d7;
+    width:1000px;
+    margin:0 auto;
+    margin-top:30px;
+}
 
     #LogoFoot{
         width:1000px;
@@ -90,5 +200,3 @@ a{
             height: 30px;
         }
     }
-
-}
