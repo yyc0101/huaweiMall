@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>购物车页</title>
+<link rel="stylesheet" type="text/css" href="../css/shoppingCart.css"/>
+</head>
+<body>
+    <!-- 导航栏页 -->
+<div>
+    <div id="header">
+        <ul>
+            <li><a href="javascript: ;">首页</a></li>
+            <li><a href="javascript: ;">华为官网</a></li>
+            <li><a href="javascript: ;">荣耀官网</a></li>
+            <li><a href="javascript: ;">花粉俱乐部</a></li>
+            <li><a href="javascript: ;">帮助中心</a></li>
+            <li><a href="javascript: ;">v码(优购码)</a></li>
+            <li><a href="javascript: ;">企业码</a></li>
+            <li><a href="javascript: ;">Select Region</a></li>
+        </ul>
+
+        <div id="more-show">
+            <div id="more">
+                <a href="javascript: ;" id="show">更多精彩</a>
+                <div id="down-more">
+                    <dl>
+                        <dt><a href="javascript: ;">EMUI</a></dt>
+                        <dt><a href="javascript: ;">应用市场</a></dt>
+                        <dt><a href="javascript: ;">华为终端云空间</a></dt>
+                        <dt><a href="javascript: ;">开发者联盟</a></dt>
+                    </dl>
+                    <div class="ma">
+                        <a href="javascript: ;">
+                            <img src="../imgs/vcode.png"/>
+                        </a>
+                        <p>扫一扫,<a href="javascript: ;">下载客户端</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 登录注册 -->
+        <div id="register">
+            <div id="regist">
+                <li><a href="register.html" target="_blank">请登录</a></li>
+                <li><a href="login.html" target="_blank">注册</a></li>
+                <li><a href="javascript: ;">我的订单</a></li>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- logo页 -->
+<div class="logoPage">
+    <div class="logo" style="float:left">
+        <a href="javascript: ;"><img src="../imgs/logo.png" style="width:200px;"></a>
+        <span style="font-size:26px;">我的购物车</span>
+    </div>
+    <div class="logoright" style="float:right">
+        <span id="span1"><p></p></span>
+        <span id="span2"><p></p></span>
+        <span id="span3"><p></p></span>
+    </div>
+    
+</div>
+
+
+<!-- 中间购物车部分 -->
+<div id="content">
+    <!-- 提示是否登录 -->
+    <div id="islogin">
+        <span>您还没有登录！登录后可查看之前加入的商品</span>
+        <a href="../html/register.html" target="_blank">登录</a>
+
+    </div>
+
+
+    <!-- 全选按钮部分 -->
+    <div id="allbtn">
+        <div id="allbtnLeft">
+            <i></i>
+            <span>全选</span>
+            <span>商品</span>
+        </div>
+        <div id="allbtnRight">
+            <span>单价</span>
+            <span>数量</span>
+            <span>小计</span>
+            <span>操作</span>
+        </div>
+    </div>
+
+    <!-- 商品详情 -->
+    <div id="goodDeta">
+
+        <div id="goodsTop">
+            <div id="TopLeft">
+                <i></i>
+                <img src="../imgs/sj2.jpg">
+                <span>荣耀9青春版 全网通标配版（魅海蓝）</span>
+            </div>
+
+            <div id="TopRight"> 
+                    <li style="color:#3a3a3a">￥1199</li>
+                    <li id="areas">
+                        <input type="text" value="1">
+                        <p><a href="#">+</a></p>
+                        <p><a href="#">-</a></p>
+                    </li>
+                    <li style="color:red;font-weight:600">￥1199</li>
+                    <li><a href="#">删除</a></li>
+            </div>
+        </div>
+        <!-- 服务 -->
+        <div id="goodsContent">
+            <li>服务</li>
+            <li><a href="#">碎屏保</a><span>可选碎屏保</span></li>
+        </div>
+        <!-- 配 -->
+        <div id="goodsFoot">
+            <li>配</li>
+            <li><a href="#"><img src="../imgs/mp.jpg"></a></li>
+            <li><a href="#">华为畅享7S 3GB+32GB 全网通标配版（金色)</a></li>
+            <li>x1</li>
+        </div>
+
+    </div>
+
+    <div id="goodDeta">
+
+        <div id="goodsTop">
+            <div id="TopLeft">
+                <i></i>
+                <img src="../imgs/mp1.jpg">
+                <span>华为畅享7S 3GB+32GB 全网通标配版（金色）</span>
+            </div>
+
+            <div id="TopRight"> 
+                    <li style="color:#3a3a3a">￥1199</li>
+                    <li id="areas">
+                        <input type="text" value="1">
+                        <p><a href="#">+</a></p>
+                        <p><a href="#">-</a></p>
+                    </li>
+                    <li style="color:red;font-weight:600">￥1499</li>
+                    <li><a href="#">删除</a></li>
+            </div>
+        </div>
+        <!-- 服务 -->
+        <div id="goodsContent">
+            <li>服务</li>
+            <li><a href="#">碎屏保</a><span>可选碎屏保</span></li>
+        </div>
+        <!-- 配 -->
+        <div id="goodsFoot">
+            <li>配</li>
+            <li><a href="#"><img src="../imgs/mp2.jpg"></a></li>
+            <li><a href="#">华为小天鹅蓝牙音箱（白色） 蓝牙音箱（白色）</a></li>
+            <li>x1</li>
+        </div>
+    
+    </div>
+
+
+
+
+</div>
+
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+</html>

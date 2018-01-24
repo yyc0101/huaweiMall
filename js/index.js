@@ -289,60 +289,27 @@ lun2();
 //轮播图（无缝滚动）
     var i=0;
     var timer=null;
-    var firstimg=$('.uuls-one a').first().clone(); //复制第一张图片
-    var secondimg = $('.uuls-one a:eq(1)').clone();
-    var thriry = $('.uuls-one a:eq(2)').clone();
-    $('.uuls-one').append(firstimg).append(secondimg).append(thriry).width(($('.uuls-one a').length)*($('.uuls-one a').width()+3));
 
      //第一张图片放到最后一张图片后，设置ul的宽度为图片
     // 下一个按钮
 
-    $('.btn-right').click(function(){
-        i++;
-    
-        if (i==$('.uuls-one a').length -4) {
-        i=1; //这里不是i=0
-        $('.uuls-one').css({left:0}); //保证无缝轮播，设置left值
-        };
-        
-        $('.uuls-one').stop().animate({left:-i*232},300);
-
-    })
-    
-    // 上一个按钮
     $('.btn-left').click(function(){
-        
         i--;
         if (i==-1) {
-            i=$('.uuls-one a').length-3;
-            $('.uuls-one').css({left:-($('.uuls-one a').length-3)*232});
-        }
-            $('.uuls-one').stop().animate({left:-i*232},300);
-        })
-
-//     //定时器自动播放
-//   timer=setInterval(function(){
-//         i++;
-//         if (i==$('.uuls-one a').length) {
-//         i=1;
-//         $('.uuls-one').css({left:0});
-//         };
+            i= 0;
+            $('.uuls').css({left:i*232});
+            return;
+        };
+    $('.uuls').stop().animate({left:-i*232},300);
         
-//         $('.uuls-one').stop().animate({left:-i*232},300);
-//     },1000) 
-    
-//     //鼠标移入，暂停自动播放，移出，开始自动播放
-//    $('#bout-bottom').hover(function(){ 
-//         clearInterval(timer);
-//         },
-//         function(){
-//             timer = setInterval(function(){
-//             i++;
-//             if (i==$('.uuls-one a').length-2) {
-//                 i=1;
-//                 $('.uuls-one').css({left:0});
-//             };
-            
-//         $('.uuls-one').stop().animate({left:-i*230},300);
-//         },1000)
-//     }) 
+    })
+    // 上一个按钮
+    $('.btn-right').click(function(){
+        i++;
+        if(i>=$('.uuls a').length - 5){
+            console.log(i)
+            i =$('.uuls a').length - 5
+            $('.uuls').css({left:i*232});  
+        } 
+        $('.uuls').stop().animate({left:-i*232},300);       
+    })

@@ -32,6 +32,11 @@ gulp.task('copy-js', function(){
     .pipe(gulp.dest('D:\\phpStudy\\WWW\\js'));
 });  
 
+gulp.task('copy-php', function(){
+    gulp.src('*.php')
+    .pipe(gulp.dest('D:\\phpStudy\\WWW\\php'));
+})
+
 //合并压缩重命名文件
 /* gulp.task('concatuglify', function(){
     gulp.src(['js/index.js', 'js/goods.js'])
@@ -45,7 +50,8 @@ gulp.task('copy-js', function(){
 gulp.task('watch', function(){
     gulp.watch('*.html', ['copy-index']);
     gulp.watch('sass/*.scss', ['copy-scss']);
-   gulp.watch('imgs/*.jpg', ['copy-jpg']);
+    gulp.watch('imgs/*.jpg', ['copy-jpg']);
     gulp.watch('js/*.js', ['copy-js']); 
+    gulp.watch('*.php', ['copy-php']);
     // gulp.watch(['js/index.js','js/goods.js'],['concatuglify']);
 })

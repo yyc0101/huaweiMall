@@ -19,124 +19,106 @@
     </div>
     
 <!-- 中间内容 -->
-<div class="wp1">
-        <div class="login">
-				已有华为帐号
-				<a href="#" class="login-a" title="登录">登录</a><span class="ar-eg-opposite">&gt;</span>
-			</div>
-    <div class="reg-detail">
-        <!-- 选择国家开始 -->
-
-        <div class="input-container" id="chooseCountry">
-            <div class="input-left">国&nbsp;&nbsp;&nbsp;家</div>
-
-            <div class="input-content">
-                <div class="node-input" id="selectCountryImg">
-                    <input type="hidden" value="cn"><span class="select-text">中国</span>
-                    <span class="suffix" style="color: rgb(51, 51, 51);"></span>
+<!-- post请求是将所有的数据发送给服务器 -->
+<form method="post" action="../php/loginsave.php" id="formsub">
+    <div class="wp1">
+            <div class="login">
+                    已有华为帐号
+                    <a href="#" class="login-a" title="登录">登录</a><span class="ar-eg-opposite">&gt;</span>
                 </div>
-            </div>
-        </div>
+        <div class="reg-detail">
+            <!-- 选择国家开始 -->
 
-        <!--手机号码 -->
+            <div class="input-container" id="chooseCountry">
+                <div class="input-left">国&nbsp;&nbsp;&nbsp;家</div>
 
-        <div class="input-container" id="phoneInputDiv-box">
-            <div class="input-left">
-                <div id="input_languageCode" class="ddrop-EMU5">
-                    <input type="hidden" value="0086"><span class="select-text">+86(中国)</span>
-                    <span class="suffix" style="color: rgb(51, 51, 51);"></span>
-                </div>
-            </div>
-
-            <div class="input-right"></div>
-            <div class="input-content">
-                <label class="opacity_Class" for="username">
-                    <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);" class="text">请输入手机号</div>
-                </label>
-                <input id="username" class="text" type="text" name="formBean.username"autocomplete="off"style="z-index: 1;">
-            </div>
-        </div>
-        <!-- 需要验证的结果返回值在此处放置 -->
-        <div id="msg_phone" style="display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
-
-
-        <div class="input-container" id="randomCodeDiv">
-            <div class="input-left">图&nbsp;形&nbsp;验&nbsp;证&nbsp;码 </div>
-
-            <div class="input-right">
-                <img style="height: 40px; width: 100px; position:absolute;left:320px;top:0px;" src="https://hwid1.vmall.com/Captcha/authCodeImage?session_code_key=p_reg_login_websso_session_ramdom_code_key" id="randomCodeImg" alt="验证码" onclick="chgRandomCodeForReset();" onload="if(this.src.indexOf('loading.gif')==-1){this.style.width='100px'}" onerror="this.style.width='40px';this.src='https://hwid1.vmallres.com/CAS/up/rss_16/css/mobile/standard_rss/images/loading.gif?UP_CAS_2.6.0.102';"> 
-                    <b id="authCodeRight" class="r" datavalue="false"></b>
-            </div>
-            <div class="input-content">
-                <label class="opacity_Class" for="randomCode">
-                    <div  style="border: none; background: transparent; cursor: text;margin-left:0px; color: rgb(204, 204, 204);"  class="text">请输入图形验证码</div>
-                </label>
-                <input id="randomCode" style="position:absolute;left:130px;top:-30px;border:none;outline:none; background: #f7f7f7;z-index: 1;" autocomplete="off">
-            </div>
-        </div>
-        <!-- 需要验证的结果返回值在此处放置 -->
-        <div id="msg_randomCode" style="display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
-
-        <div class="input-container" id="errRandomCode-box">
-            <div class="input-left"> 短&nbsp;信&nbsp;验&nbsp;证&nbsp;码</div>
-            <div class="input-right">
-                <input type="button" class="get-code" autocomplete="off" id="getValiCode" value="获取验证码" style="position:absolute;top:10px;left:336px;border:none;outline:none;color:#007dff;background: #f7f7f7;"> 
-                <span id="msg_getPhoneRandomCode" style="position: relative; top: 34px;"></span>
-            </div>
-            <div class="input-content">
-                    <label class="opacity_Class"  for="authCode">
-                        <div style="border: none;outline:none;margin:2px;cursor: text; color: rgb(204, 204, 204);">
-                            请输入短信验证码
-                        </div>
-                    </label>
-                    <input id="randomCode" style="width:190px;height:30px;position:absolute;left:130px;top:-37px;border: none;outline:none; background: #f7f7f7;z-index:1;" autocomplete="off">
-            </div>
-        </div>
-        <!-- 需要验证的结果返回值在此处放置 -->
-        <div id="check-RandomCode" style="display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
-
-
-
-        <!-- 设置密码 -->
-        <div class="set-password">
-            <div class="input-container" id="pwdDiv">
-                <div class="l input-left"> 密&nbsp;&nbsp;&nbsp;码</div>
                 <div class="input-content">
-                    <label class="opacity_Class" for="password">
-                        <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);" >请输入密码</div>
-                    </label>
-                    <input style="background: #f7f7f7;position:absolute;left:130px; top:-27px;border:none;outline:none; " oncut="return false;" oncopy="return false" type="password" autocomplete="off" id="password" name="formBean.password" style="z-index: 1;">
+                    <div class="node-input" id="selectCountryImg">
+                        <input type="hidden" value="cn"><span class="select-text">中国</span>
+                        <span class="suffix" style="color: rgb(51, 51, 51);"></span>
+                    </div>
                 </div>
             </div>
-            <div id="check_dialog" style="display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
+              <!--手机号码 -->
+            
+            <div class="input-container" id="phoneInputDiv-box">
+                <div class="input-left">
+                    <div id="input_languageCode" class="ddrop-EMU5">
+                        <input type="hidden" value="0086"><span class="select-text">+86(中国)</span>
+                        <span class="suffix" style="color: rgb(51, 51, 51);"></span>
+                    </div>
+                </div>
+                <!--手机号码验证 -->
 
-            <div class="input-container " id="confirmpwdDiv">
-                <div class="l input-left"> 确&nbsp;认&nbsp;密&nbsp;码</div>
+                <div class="input-right"></div>
                 <div class="input-content">
-                    <label class="opacity_Class" for="confirmPwd">
-                        <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);" class="text vam">
-                            请再次输入密码
-                        </div>
-                    </label>
-                    <input oncut="return false;" id="confirmPwd" type="password" autocomplete="off" class="text vam" name="checkPassword" style="background: #f7f7f7;position:absolute;left:130px; top:-27px;border:none;outline:none; z-index: 1;">
+                    <input id="username"  name="formusername" placeholder="请输入手机号" class="text" type="text" autocomplete="off"style="height: 25px;z-index:1;" value="15389201482">
                 </div>
             </div>
             <!-- 需要验证的结果返回值在此处放置 -->
-            <div id="checkPassword" style="display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
+            <div id="msg_phone" style="font-size:10px;color:red;display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
 
-        </div>
 
-        <!-- 按钮 -->
-        <div class="reg-btn">
-            <input type="button" class="btn-reg" id="btnSubmit" value="注册" tabindex="7">
+            <div class="input-container" id="randomCodeDiv">
+                <div class="input-left">图&nbsp;形&nbsp;验&nbsp;证&nbsp;码 </div>
+                <div class="input-right">
+                    <!-- 随机生成的数 -->
+                    <div id="randomCodeNum" style="font-size:20px;line-height:40px;height: 40px;border-radius:50px; width: 100px; position:absolute;left:310px;top:0px;" alt="验证码" >0101</div> 
+                       
+                </div>
+                <div class="input-content">
+                    <input id="randomCode"  placeholder="请输入图形验证码"  style="height: 25px;position:absolute;left:130px;top:-30px;border:none;outline:none; background: #f7f7f7;" autocomplete="off">
+                </div>
+            </div>
+            <!-- 需要验证的结果返回值在此处放置 -->
+            <div id="msg_randomCode" style="font-size:10px;color:red;display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
+
+            <div class="input-container" id="errRandomCode-box">
+                <div class="input-left"> 短&nbsp;信&nbsp;验&nbsp;证&nbsp;码</div>
+                <div class="input-right">
+                    <input type="button" class="get-code" autocomplete="off" id="getValiCode" value="获取验证码" style="position:absolute;top:10px;left:336px;border:none;outline:none;color:#007dff;background: #f7f7f7;"> 
+                    <span id="msg_getPhoneRandomCode" style="position: relative; top: 34px;"></span>
+                </div>
+                <div class="input-content">
+                    <input id="randomCodeXi"  placeholder="请输入短信验证码" style="width:190px;height:30px;position:absolute;left:130px;top:-37px;border: none;outline:none; background: #f7f7f7;" autocomplete="off">
+                </div>
+            </div>
+            <!-- 需要验证的结果返回值在此处放置 -->
+            <div id="check-RandomCode" style="font-size:10px;color:red;display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
+
+
+            <!-- 设置密码 -->
+            <div class="set-password">
+                <div class="input-container" id="pwdDiv">
+                    <div class="l input-left"> 密&nbsp;&nbsp;&nbsp;码</div>
+                    <div class="input-content">
+                        <input   id="password"  name="formpassword" placeholder="请输入密码" style="background: #f7f7f7;position:absolute;left:130px; top:-27px;border:none;outline:none; " type="password" autocomplete="off" value="123456">
+                    </div>
+                </div>
+                <div id="check_dialog" style="font-size:10px;color:red;display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
+
+                <div class="input-container " id="confirmpwdDiv">
+                    <div class="l input-left"> 确&nbsp;认&nbsp;密&nbsp;码</div>
+                    <div class="input-content">
+                        <input  id="confirmPwd" placeholder="请再次输入密码" type="password" autocomplete="off" class="text vam" name="checkPassword" style="height: 25px;background: #f7f7f7;position:absolute;left:130px; top:-27px;border:none;outline:none;" value="123456">
+                    </div>
+                </div>
+                <!-- 需要验证的结果返回值在此处放置 -->
+                <div id="checkPassword" style="font-size:10px;color:red;display:line-block;width: 410px;height: 30px;margin-left: 257px;margin-bottom: -30px;"></div>
+
+            </div>
+
+            <!-- 按钮 -->
+            <div class="reg-btn">
+                <input type="submit" class="btn-reg" id="btnSubmit" value="注册" tabindex="7">
+            </div>
+            
         </div>
-        
     </div>
-</div>
 
+</form>
+<!-- 中间内容已完成 -->
 <div id="xs"></div>
-
-
 
     <div id="LogoFoot">
         <div><a href="#">用户协议</a>&nbsp;<span>|</span>&nbsp;<a href="#">隐私政策</a>&nbsp;<span>|</span>&nbsp;<a href="#">常见问题</a></div>
@@ -145,4 +127,6 @@
 </div>  
     
 </body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
 </html>
