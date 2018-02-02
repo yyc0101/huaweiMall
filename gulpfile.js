@@ -50,7 +50,7 @@ gulp.task('copy-php', function(){
 gulp.task('watch', function(){
     gulp.watch('*.html', ['copy-index']);
     gulp.watch('sass/*.scss', ['copy-scss']);
-    gulp.watch('imgs/*.jpg', ['copy-jpg']);
+    gulp.watch('imgs/*.*', ['copy-jpg']);
     gulp.watch('js/*.js', ['copy-js']); 
     gulp.watch('*.php', ['copy-php']);
     // gulp.watch(['js/index.js','js/goods.js'],['concatuglify']);

@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-control" content="no-cache">
 <meta http-equiv="Cache" content="no-cache">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>购物车页</title>
-<link rel="stylesheet" type="text/css" href="../css/shoppingCart.css"/>
+<title>详情页</title>
+<link rel="stylesheet" type="text/css" href="../css/detail.css"/>
 </head>
 <body>
-    <!-- 导航栏页 -->
+<!-- 导航栏 -->
 <div>
     <div id="header">
         <ul>
@@ -52,6 +52,15 @@
                 <li><a href="register.html" target="_blank">请登录</a></li>
                 <li><a href="login.html" target="_blank">注册</a></li>
                 <li><a href="javascript: ;">我的订单</a></li>
+                <li><p></p><a id="shops" href="javascript: ;">购物车(0)</a></li>
+            </div>
+            <div id="shoppCart">
+                <div>
+                    <span>
+                        <img src="../imgs/shopp.png">
+                        <p>您的购物车是空的，赶快选购吧~</p>
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -60,145 +69,98 @@
 
 <!-- logo页 -->
 <div class="logoPage">
-    <div class="logo" style="float:left">
-        <a href="javascript: ;"><img src="../imgs/logo.png" style="width:200px;"></a>
-        <span style="font-size:26px;">我的购物车</span>
+    <div class="logo">
+        <a href="javascript: ;"><img src="../imgs/logo.png"></a>
+        <ul>
+            <li><a href="javascript: ;">手机</a></li>
+            <li><a href="javascript: ;">笔记本&平板</a></li>
+            <li><a href="javascript: ;">穿戴</a></li>
+            <li><a href="javascript: ;">智能家居</a></li>
+            <li><a href="javascript: ;">通用配件</a></li>
+            <li><a href="javascript: ;">专属配件</a></li>
+        </ul>
     </div>
-    <div class="logoright" style="float:right">
-        <span id="span1"><p></p></span>
-        <span id="span2"><p></p></span>
-        <span id="span3"><p></p></span>
+    <div class="logoright">
+        <div class="right">
+            <div class="onsbm">
+                <form>
+                    <input type="text" id="firstInput" autocomplete="off">
+                </form>
+            </div>
+            <div id="liss">
+                <li><a href="javascript: ;">HUAWEI Mate 10</a></li>
+                <li><a href="javascript: ;">荣耀V10</a></li>
+            </div>
+        </div>
     </div>
     
 </div>
 
-
-
-
-
-<!-- 中间购物车部分 -->
-<div id="content">
-    <!-- 提示是否登录 -->
-    <div id="islogin">
-        <span>您还没有登录！登录后可查看之前加入的商品</span>
-        <a href="../html/register.html" target="_blank">登录</a>
-
-    </div>
-
-
-    <!-- 全选按钮部分 -->
-    <div id="allbtn">
-        <div id="allbtnLeft" >
-            <!-- 全选商品 -->
-            <i class="whole_check"></i>
-            <span>全选</span>
-            <span>商品</span>
-        </div>
-        <div id="allbtnRight">
-            <span>单价</span>
-            <span>数量</span>
-            <span>小计</span>
-            <span>操作</span>
-        </div>
-    </div>
-
-    <!-- 商品详情 -->
-    <!-- 第一个商品详情  -->
-    <div id="goodDeta" class="order_content">
-        <div id="goodsTop" class="goodsTop">
-            <div id="TopLeft" class="TopLeft">
-                <!-- 商品全选 -->
-                <i class="son_check"></i>
-                <img src="../imgs/sj2.jpg">
-                <span>荣耀9青春版 全网通标配版（魅海蓝）</span>
-            </div>
-
-            <div id="TopRight" class="TopRight"> 
-                    <li class="price" style="color:#3a3a3a">￥1199</li>
-                    <li id="areas" class="amount_box">
-                        <input type="text" value="1" class="sum">
-                        <p><a href="javascript: ;" class="plus">+</a></p>
-                        <p><a href="javascript: ;" class="reduce">-</a></p>
-                    </li>
-                    <li class="sum_price" style="color:red;font-weight:600">￥1199</li>
-                    <li><a class="delBtn" href="javascript: ;">删除</a></li>
-            </div>
-        </div>
-        <!-- 服务 -->
-        <div id="goodsContent">
-            <li>服务</li>
-            <li><a href="javascript: ;">碎屏保</a><span>可选碎屏保</span></li>
-        </div>
-        <!-- 配 -->
-        <div id="goodsFoot">
-            <li>配</li>
-            <li><a href="javascript: ;"><img src="../imgs/mp.jpg"></a></li>
-            <li><a href="javascript: ;">华为畅享7S 3GB+32GB 全网通标配版（金色)</a></li>
-            <li>x1</li>
-        </div>
-
-    </div>
-    <!-- 第二个商品详情 -->
-    <div id="goodDeta" class="order_content">
-        <div id="goodsTop" class="goodsTop">
-            <div id="TopLeft" class="TopLeft">
-                <!-- 商品全选 -->
-                <i class="son_check"></i>
-                <img src="../imgs/mp1.jpg">
-                <span>华为畅享7S 3GB+32GB 全网通标配版（金色）</span>
-            </div>
-
-            <div id="TopRight" class="TopRight"> 
-                    <li class="price" style="color:#3a3a3a" >￥1499</li>
-                    <li id="areas" class="amount_box">
-                        <input type="text" value="1" class="sum">
-                        <p><a href="javascript: ;" class="plus">+</a></p>
-                        <p><a href="javascript: ;"  class="reduce">-</a></p>
-                    </li>
-                    <li class="sum_price" style="color:red;font-weight:600">￥1499</li>
-                    <li><a class="delBtn" href="javascript: ;">删除</a></li>
-            </div>
-        </div>
-        <!-- 服务 -->
-        <div id="goodsContent">
-            <li>服务</li>
-            <li><a href="javascript: ;">碎屏保</a><span>可选碎屏保</span></li>
-        </div>
-        <!-- 配 -->
-        <div id="goodsFoot">
-            <li>配</li>
-            <li><a href="javascript: ;"><img src="../imgs/mp2.jpg"></a></li>
-            <li><a href="javascript: ;">华为小天鹅蓝牙音箱（白色） 蓝牙音箱（白色）</a></li>
-            <li>x1</li>
-        </div>
-        
-    </div>
-
-    <!-- 全选结算部分  -->
-    <div id="curreny">
-        <div id="totalbtnLeft">
-            <i class="whole_check"></i>
-            <span>全选</span>
-            <span>删除</span>
-        </div>
-        <div id="totalbtnRight">
-            <div id="sctotalprcie">
-                <p>总计：<span  class="total_text">￥0.00</span></p>
-                <div>已选择&nbsp;<span class="piece_num">0</span>&nbsp;件商品，优惠：<i>￥0.00</i></div>
-            </div>
-            <div id="totalprice" class="calBtn"><a href="javascript: ;">立即结算</a></div>
-        </div>
-    </div>
-
+<!-- 放大镜导航栏 -->
+<div id="big">
+    <div id="bigs">
+        <a href="../html/index.html" target="_blank">首页</a><span>></span>
+        <a href="javascript: ;">手机</a><span>></span>
+        <a href="javascript: ;">荣耀</a><span>></span>
+        <a href="javascript: ;">荣耀9青春版 全网通标配版（魅海蓝）</a>
+        </div> 
 </div>
 
-<!--确定删除商品（自定义模态窗口） -->
-<section class="model_bg"></section>
-<section class="my_model">
-    <p class="title">删除宝贝<span class="closeModel">X</span></p>
-    <p>您确认要删除该宝贝吗？</p>
-    <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
-</section>
+<!-- 放大镜详情 -->
+
+<div id="product">
+    <div class="contentBox12">
+        <div class="content">
+            <div id="box">
+                <div id="lagerBox" style="z-index:999;margin-top:30px;">
+                    <img src="../imgs/mm1.jpg" id="lagerImg" />
+                </div>
+                <div id="middleBox">
+                    <img src="../imgs/mm1.jpg" id="middleImg" />
+                    <div id="shadow"></div>
+                </div>
+                <div id="smallBox">
+                    <img src="../imgs/mm1.jpg" class="active" />
+                    <img src="../imgs/mm2.jpg" />
+                    <img src="../imgs/mm3.jpg" />
+                    <img src="../imgs/mm4.jpg" />
+                </div>
+            </div>
+            <div class="rightDetails">
+                <div class="afq">荣耀9青春版 全网通标配版（魅海蓝）</div>
+                <div class="goodsDetails">
+                    <ul>
+                        <li style="width:700px;line-height:20px;color:red">【购机送耳机！0/10/12/14/16/18/20/22点限量送新年大礼包+限量送价值140元礼包（活动结束后发放，数量有限，送完即止）】 碎屏服务宝7折优惠（原价129元）
+                            <span style="color:#333">正反四摄/5.65英寸全面屏*</span>
+                        </li>
+                        <li class="litwo">售价：<span>￥1199.00</span></li>
+                        <li>促销信息：</li>
+                        <li class="lithree">商品评分：<span>★★★★★</span></li>
+                        <li>机身内存：<span class="Choice">4G</span></li>
+                        <li>套餐类型：<span class="Choice">官方标配</span></li>
+                        <li class="phonmeColor">机身颜色：<span class="Choice">白色</span><span class="Choice1">黑色</span><span class="Choice1">红色</span></li>
+                        <li>版本类型：<span class="Choice">中国大陆</span></li>
+                        <li class="num1">数量：
+                            <input type="button" value="-" class="reduce">
+                            <input type="text" class="textnum" value="1">
+                            <input type="button" value="+" class="plus">
+                        </li>
+                        <li>库存<span>1</span></li>
+                    </ul>
+                    <div class="shopps">
+                        <a href="javascript:;" class="shopps2">
+                            <i class="iconfont icon-gouwuche"></i>
+                            <span>加入购物车</span>
+                        </a>
+                        <a href="javascript: ;" style="display:inline-block;width:120px;height:36px;background:#ca151d;vertical-align:bottom;color:white;">
+                            立即下单
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- 底部 -->
@@ -307,36 +269,35 @@
         </div>
     </div>
 </div>
-<!-- 第三部分 -->
-<div id="footThree">
-    <div id="three"> 
-        <div id="footLogo"><img src="../imgs/logos.jpg"></div>
-        <div id="footContent">
-            <div>
-                <a href="javascript: ;">隐私政策</a>&nbsp;<a href="javascript: ;">服务协议</a>
-                <span>Copyright © 2012-2017 华为软件技术有限公司 版权所有 保留一切权利</span>
+    <!-- 第三部分 -->
+    <div id="footThree">
+        <div id="three"> 
+            <div id="footLogo"><img src="../imgs/logos.jpg"></div>
+            <div id="footContent">
+                <div>
+                    <a href="javascript: ;">隐私政策</a>&nbsp;<a href="javascript: ;">服务协议</a>
+                    <span>Copyright © 2012-2017 华为软件技术有限公司 版权所有 保留一切权利</span>
+                </div>
+                <div>
+                    <span>公安备案</span>
+                    <a href="javascript: ;">苏公网安备32011402010009号</a>&nbsp;|&nbsp;<a href="javascript: ;">苏ICP备17040376号-6</a>
+                    <span>增值电信业务经营许可证：</span><a href="javascript: ;">苏B2-20130048号</a>
+                </div>
+                <div>
+                    <span>网络文化经营许可证：</span>
+                    <a href="javascript: ;">苏网文[2015] 1599-026号</a>
+                </div>
             </div>
-            <div>
-                <span>公安备案</span>
-                <a href="javascript: ;">苏公网安备32011402010009号</a>&nbsp;|&nbsp;<a href="javascript: ;">苏ICP备17040376号-6</a>
-                <span>增值电信业务经营许可证：</span><a href="javascript: ;">苏B2-20130048号</a>
+            <div id="threeRight">
+                <a href="javascript: ;"><img src="../imgs/foot1.png"></a>
+               <a href="javascript: ;"><img src="../imgs/foot2.png"></a>
+                <a href="javascript: ;"><img src="../imgs/foot3.png"></a>
+                <a href="javascript: ;"><img src="../imgs/foot4.jpg"></a>
             </div>
-            <div>
-                <span>网络文化经营许可证：</span>
-                <a href="javascript: ;">苏网文[2015] 1599-026号</a>
-            </div>
-        </div>
-        <div id="threeRight">
-            <a href="javascript: ;"><img src="../imgs/foot1.png"></a>
-           <a href="javascript: ;"><img src="../imgs/foot2.png"></a>
-            <a href="javascript: ;"><img src="../imgs/foot3.png"></a>
-            <a href="javascript: ;"><img src="../imgs/foot4.jpg"></a>
         </div>
     </div>
-</div>
-
-
 </body>
 <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="../js/shoppingCart.js"></script>
+<script type="text/javascript" src="../js/detail.js"></script>
+
 </html>

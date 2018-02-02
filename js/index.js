@@ -67,7 +67,7 @@ $(document).ready(function(){
     
 
     // 底部
-    //固定定位
+    //固定定位返回顶部
     $(window).scroll(function(){
         if($(document).scrollTop() >= 800){
             $('#lastFix #fix').css({

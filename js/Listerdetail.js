@@ -2,16 +2,19 @@
 $(function(){
     $.ajax({
         type:'get',
-        url:'getGoodsList.php',
+        url:'../php/getGoodsList.php',
         success:function(data){
-
+            showgoodsList(data);
+            $('.topay').click(function(){
+                console.log(100);
+            });
         },
         dataType:'json',
     });
-
 })
 
 function showgoodsList(datas){
+    // console.log(datas);
     let $ulbox = $('#ulbox');
     for(let i=0;i<datas.length;i++){
         //创建li
@@ -19,23 +22,23 @@ function showgoodsList(datas){
         <li>
             <div class="pro-panels">
                 <p class="p-img">
-                    <a  href="#" title="'+ datas[i].goodsName +'">   //商品名称
-                    <img alt="荣耀9青春版 全网通标配版（魅海蓝）" src="../imgs/li1.jpg">  //商品图片
+                    <a href='detail.html' target='_blank' class='topay' title="${datas[i].goodsName}">   
+                    <img alt="荣耀9青春版 全网通标配版（魅海蓝）" src="${datas[i].goodsImg}">  
                     </a>
                 </p>
                 <p class="p-name">
-                    <a title="荣耀9青春版 全网通标配版（魅海蓝）">荣耀9青春版 全网通标配版（魅海蓝）  //商品描述
-                        <span class="red">正反四摄/5.65英寸全面屏*</span>    //商品类型
+                    <a title="荣耀9青春版 全网通标配版（魅海蓝）">荣耀9青春版 全网通标配版（魅海蓝） 
+                        <span class="red">${datas[i].goodsType}*</span>
                     </a>
                 </p>
-                <p class="p-price"><b>¥1199</b></p>  
+                <p class="p-price"><b>¥${datas[i].goodsPrice}</b></p>     
 
                 <div class="p-button">
                     <table colspan="0" rowspan="0">
                         <tbody>
                             <tr>
-                                <td><a class="p-button-cart"><span>选购</span></a></td>  //备用1
-                                <td><label class="p-button-score"><span>6653人评价</span></label></td> 
+                                <td><a class="p-button-cart"><span>${datas[i].beiyong1}</span></a></td>  
+                                <td><label class="p-button-score"><span>${datas[i].beiyong2}</span></label></td>  
                             </tr>
                         </tbody>
                     </table>
@@ -44,5 +47,11 @@ function showgoodsList(datas){
             </div>
         </li>
         `;
+
+        $ulbox.append(str);
+        $('.topay').click(function(){
+            console.log(100);
+        })
+
     }
 }
